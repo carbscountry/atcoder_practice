@@ -91,13 +91,11 @@
  - [AGC 040 -><](https://atcoder.jp/contests/agc040/tasks/agc040_a)
     - 隣の数より大きいor小さくなればいい
     - 　> と　<　で別の配列で値を算出してそれぞれの大きい方を取ればいい
-
-- [AGC Sorted Arrays](https://atcoder.jp/contests/agc013/tasks/agc013_a)
-    - 
+    
+ - [AGC 013 Sorted Arrays](https://atcoder.jp/contests/agc013/tasks/agc013_a)
+    - 隣の数より大きい時と小さい時（初期値iより小さい時）のwhile文を作成
 
 
 
 
 ## ocコーディングテスト対策講座
-
-- 

@@ -1,19 +1,15 @@
-def combine(n, A):
+def combine(N, A):
     ans = 0
     # 初期値
     i = 0
-    while i < n:
+    while i < N:
         j = i + 1
         ans += 1
-        if (j < n):
-            if(A[i] == A[j]):
+        while (j < N and A[j - 1] <= A[j]):
+            j += 1
+        if A[i] >= A[j-1]:
+            while (j < N and A[j - 1] >= A[j]):
                 j += 1
-            while (A[i] < A[j] and A[j] - A[j-1] == 1 or 0) or (A[i] > A[j] and A[j-1] - A[j] == 1 or 0):
-                j += 1
-                if(j == n):
-                    break
-
-        # print(A[i:j])
         i = j
 
     return ans
@@ -21,9 +17,8 @@ def combine(n, A):
 
 def main():
     n = int(input())
-    A = list(map(int, input().split()))
-    a = combine(n, A)
-    print(a)
+    a = list(map(int, input().split()))
+    print(combine(n, a))
 
 
 if __name__ == '__main__':
