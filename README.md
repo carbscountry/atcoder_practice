@@ -1,5 +1,11 @@
 # 記録
 
+
+## oj使い方
+- [マニュアル](https://github.com/online-judge-tools/oj/blob/master/docs/getting-started.ja.md)
+- oj d url(ダウンロード)
+- oj t -c "python3 main.py"(テスト)
+
 ## 5-2 全探索 メモリ制限,TLEに注意
 - [097_B_Exponential](https://atcoder.jp/contests/abc097/tasks/abc097_b) 
     - べき数であり、平方根ではない。注意
@@ -34,4 +40,64 @@
     - 
 ## 5-3 バケット
 
--[]
+- [164 - gacha](https://atcoder.jp/contests/abc164/tasks/abc164_c)
+
+- [154 - Distinct or not](https://atcoder.jp/contests/abc154/tasks/abc154_c)
+
+- [118 - Foods Loved by Everyone](https://atcoder.jp/contests/abc118/tasks/abc118_b)
+
+- [081 - Not so Diverse](https://atcoder.jp/contests/abc081/tasks/arc086_a)
+
+- [競プロ典型問題90問 027 Sign Up Requests](https://atcoder.jp/contests/typical90/tasks/typical90_aa)
+
+- [155 Poll](https://atcoder.jp/contests/abc155/tasks/abc155_c)
+    - 名前順にソートするのを忘れずに
+
+- [073 Write and Erase](https://atcoder.jp/contests/abc073/tasks/abc073_c)
+
+- [082 Good Sequence](https://atcoder.jp/contests/abc082/tasks/arc087_a)
+
+- [058 怪文書](https://atcoder.jp/contests/abc058/tasks/arc071_a)
+    - from functools import reduceを使うとgood
+    - Counterは&(AND)で共通項を取れる
+    - .most_common()でCounterの各要素の出現回数を取れる
+
+- [206 Swappable](https://atcoder.jp/contests/abc206/tasks/abc206_c)
+    - N(N-1) // 2から例外を引く。Ai = Aj
+
+- [200 Ringo's Favorite Number](https://atcoder.jp/contests/abc200/tasks/abc200_c)
+    - 200のmodの数を元に考える。
+    - ちなみに200で割った数の余りは200未満なので考えるのはmodの差が0になるものだけ
+
+- [046 - I love 46](https://atcoder.jp/contests/typical90/tasks/typical90_at)
+    - Counterで集計して全探索でおk
+
+## 5-4 連長圧縮、区分分割
+- [143 - Slimes](https://atcoder.jp/contests/abc143/tasks/abc143_c)
+    - S[i] != S[i+1]となるiを見つける
+
+- [019 - 高橋くんと文字列圧縮](https://atcoder.jp/contests/abc019/tasks/abc019_2)
+
+- [039 Lower](https://atcoder.jp/contests/abc139/tasks/abc139_c)
+    - 前後の比較にはfor ループを使おう
+
+- [116 Grand](https://atcoder.jp/contests/abc116/tasks/abc116_c)
+    - あとでやる
+    - 1.考え方としては次の数の方が多い時に回数が増えると考える
+    - 2.一つの要素を１つずつ引いていき、0になるまで連長圧縮を使う
+
+ - [AGC 026](https://atcoder.jp/contests/agc026/tasks/agc026_a)
+
+ - [AGC 040 -><](https://atcoder.jp/contests/agc040/tasks/agc040_a)
+    - 隣の数より大きいor小さくなればいい
+    - 　> と　<　で別の配列で値を算出してそれぞれの大きい方を取ればいい
+
+- [AGC Sorted Arrays](https://atcoder.jp/contests/agc013/tasks/agc013_a)
+    - 
+
+
+
+
+## ocコーディングテスト対策講座
+
+- 
